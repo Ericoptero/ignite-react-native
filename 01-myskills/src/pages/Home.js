@@ -1,13 +1,13 @@
 import React from 'react';
-import { View, Text, StyleSheet, TextInput, Platform, TouchableOpacity } from 'react-native';
+import { SafeAreaView, View, Text, StyleSheet, TextInput, Platform, TouchableOpacity } from 'react-native';
 
 export function Home() {
   return (
-      <View style={styles.container}>
+      <SafeAreaView style={styles.container}>
         <Text style={styles.title}>Welcome, Eric Nantes</Text>
 
-        <TextInput  
-            styles={styles.input} 
+        <TextInput
+            style={styles.input}
             placeholder="New skill"
             placeholderTextColor="#555"
         />
@@ -19,7 +19,7 @@ export function Home() {
         <Text style={[styles.title, { marginTop: 20 }]}>
             My Skills
         </Text>
-      </View>
+      </SafeAreaView>
   )
 }
 
